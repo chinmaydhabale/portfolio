@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <main>
+        <nav>
+            <img src="Clogo.png" width="50" alt="C">
+            <div class="menu">
+                <a class="forcol" href="#about">ABOUT</a>
+                <a class="forcol" href="">EXPERIENCE</a>
+                <a class="forcol" href="#project">PROJECTS</a>
+                <a class="forcol" href="#contact">CONTACT</a>
+            </div>
+        </nav>
+        <hr>
+        <!-- dark mode  -->
+        <div class="slider-container">
+            <label class="switch" for="sliderToggle">
+                <input type="checkbox" id="sliderToggle">
+                <span class="slider"></span>
+            </label>
+        </div>
+        <!-- main content  -->
+<div class="hero">
+        <div class="myinfo">
+            <div class="img">
+                <img src="chinmay.jpg" width="150" alt="">
+            </div>
+            <div class="name">
+                <p>Chinmay Dhabale</p>
+                <p>Transforming Ideas into functional, elegant solutions - lets's <br>collaborate!</p>
+                <div class="buttonresume">
+                    <button type="button" class="button">Download Resume</button>
+                </div>
+            </div>
+        </div>
+        <div class="about" id="about">
+            <p>About</p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officiis excepturi accusantium quidem
+                mollitia porro, explicabo id. Repellendus repudiandae facilis temporibus. Facere voluptate vel facilis
+                sed corrupti accusamus pariatur tempora?
+            </p>
+        </div>
+        <div class="weblangauge">
+            <img src="React-icon.svg.png" width="120" alt="">
+            <img src="JavaScript-logo.png" width="120" alt="">
+            <img src="html.png" width="120" alt="">
+            <img src="csslogo.png" width="120" alt="">
+        </div>
+        <div class="project" id="project">
+            <p>Project</p>
+            <div class="numberofproject">
+                <div class="myproject">
+                    <img src="wheatherapp.jpg" width="300" alt="">
+                    <div class="detailproject">
+                        <p>22 Feb 2023</p>
+                        <p>Online Library</p>
+                    </div>
+                    <div class="buttonproject">
+                        <button type="button" class="buttonp">View Project</button>
+                    </div>
+                </div>
+                <div class="myproject">
+                    <img src="todo.jpg" width="300" alt="">
+                    <div class="detailproject">
+                        <p>22 Feb 2023</p>
+                        <p>Online Library</p>
+                    </div>
+                    <div class="buttonproject">
+                        <button type="button" class="buttonp">View Project</button>
+                    </div>
+                </div>
+                <div class="myproject">
+                    <img src="clock.png" width="300" alt="">
+                    <div class="detailproject">
+                        <p>22 Feb 2023</p>
+                        <p>Online Library</p>
+                    </div>
+                    <div class="buttonproject">
+                        <button type="button" class="buttonp">View Project</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact" id="contact">
+            <p>Contact Me</p>
+            <form method="post">
+                <div class="namemail">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Full Name" required>
+                  
+                    <label for="Email">Email Address</label>
+                    <input type="email" id="Email" placeholder="Email Address">
+                </div>
+                
+                <label for="Subject">Subject Field</label>
+                <input type="text" id="Subject" placeholder="Subject Field">
+                <br>
+                <label for="massage">massage field</label>
+                <textarea name="text" id="massage" placeholder="massage field" cols="30" rows="10"></textarea>
+                <br>
+                <button type="button" class="button">Send Massage</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="socialicon">
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-regular fa-envelope"></i>
+        </div>
+        <hr>
+        <div class="rights">
+            <p><span>&copy;</span>2023-TK | All rights reserved</p>
+        </div>
+    </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

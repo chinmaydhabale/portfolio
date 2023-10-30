@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: white; */
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    /* overflow: hidden; */
+    /* background-color: black; */
+}
+
+main {
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: black; */
+}
+
+nav>.menu {
+
+    display: flex;
+    gap: 30px;
+    margin-right: 20px;
+}
+
+.menu>a {
+    text-decoration: none;
+    /* color: white; */
+}
+
+
+/* dark mode  */
+
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+} */
+
+.slider-container {
+    display: flex;
+    float: right;
+    margin: 7px;
+
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 34px;
+    transition: background-color 0.4s;
+}
+
+.slider:before {
+    content: "";
+    position: absolute;
+    height: 17px;
+    width: 17px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+
+
+
+/* photo  */
+
+.myinfo{
+    position: relative;
+    display: flex;
+    /* border: 2px solid; */
+    margin-top: 6%;
+    margin-left: 5%;
+}
+
+.img > img{
+    border-radius: 50%;
+    margin-left: 4%;
+}
+
+.name{
+    /* border: 2px solid; */
+    width: 100%;
+    margin-left: 2%;
+}
+
+.name>p{
+    margin-left: 20px;
+    /* color: white; */
+}
+
+.name>p:first-child{
+    font-size: 50px;
+}
+
+.name>p:nth-child(2){
+    /* color: red; */
+    font-size: 31px;
+}
+
+.buttonresume{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.button{
+    background-color: rgb(18, 140, 234);
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 14px;
+    text-align: center;
+    border: none;
+}
+
+.about{
+    margin: 40px 70px;
+}
+
+
+.about>p:first-child{
+    font-size: 35px;
+}
+
+.about>p:nth-child(2){
+    margin-top: 20px;
+}
+
+.weblangauge{
+    margin: 50px 70px;
+}
+
+.weblangauge>img{
+    margin-left: 20px;
+}
+
+.project{
+    margin: 0px 66px;
+}
+
+.project>p{
+    font-size: 40px;
+}
+
+.numberofproject{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.myproject{
+    background-color: rgb(31, 19, 3);
+    padding: 10px;
+}
+
+.buttonp{
+    background-color: transparent;
+    border: 1px solid blue;
+    border-radius: 10px;
+    color: rgb(47, 99, 233) ;
+    width: 50%;
+    height: 14%;
+    font-size: 20px;
+}
+
+.buttonproject{
+   display: flex;
+   justify-content: center;
+   padding-top: 10px;
+}
+
+.detailproject{
+    text-align: center;
+}
+
+.detailproject>p{
+    margin: 5px;
+}
+
+.contact{
+    margin: 50px 66px;
+}
+
+.contact>p{
+    font-size: 30px;
+}
+
+form{
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+form>label{
+    display: none;
+}
+
+#name,#Email{
+    width: 49.73%;
+}
+
+#massage{
+    margin-top: 7px;
+}
+
+#Subject, #massage{
+    width: 100%;
+    margin-top: 7px;
+}
+
+#name,#Email,#Subject, #massage{
+    border: none;
+    background-color: rgba(22, 21, 21, 0.701);
+    padding: 2%;
+}
+
+.hero{
+    margin: 0px 30px;
+}
+
+.namemail{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.namemail>label{
+    display: none;
+}
+
+form>button{
+    margin-top: 8px;
+}
+
+.socialicon{
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.socialicon i {
+    font-size: 20px;
+    margin: 7px;
+}
+.rights{
+    text-align: center;
+}
+
+footer{
+    padding-bottom: 40px;
+}
+
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
