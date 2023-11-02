@@ -39,20 +39,31 @@ nav>.menu {
 
 /* dark mode  */
 
-/* body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-} */
 
-.slider-container {
+.darkmode{
+    display: flex;
+    justify-content: end;
+    position: relative;
+    right: 20px;
+}
+
+.darkmodeicon{
+    float: right;
+    position: relative;
+    top: 12px;
+}
+
+.fa-sun,.fa-moon{
+    font-size: 29px;
+    
+}
+
+/* .slider-container {
     display: flex;
     float: right;
     margin: 7px;
+    position: relative;
+    top: 12px;
 
 }
 
@@ -98,7 +109,7 @@ input:checked + .slider {
 input:checked + .slider:before {
     transform: translateX(26px);
 }
-
+ */
 
 
 
@@ -293,3 +304,119 @@ footer{
     color: #fff;
 }
 
+
+
+@media screen and (max-width: 680px){
+  
+
+    main{
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        /* box-sizing: border-box; */
+    }
+
+    nav>.menu {
+        margin: 0;
+        padding: 0;
+        gap: 14px;
+        margin-right: 7px;
+    }
+
+    nav>img{
+        margin: 0;
+        padding: 0;
+    }
+
+    nav>.menu>a{
+        display: flex;
+        font-size: 12px;
+    }
+
+
+  .hero{
+    margin: 0;
+    padding: 0;
+  }
+
+
+    .myinfo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* margin-top: 30px; */
+    margin: 0;
+    padding-top: 40px;
+  }
+
+  .img>img{
+    margin: 0;
+    text-align: center;
+  }
+
+  .name>p{
+    margin: 0;
+    text-align: center;
+  }
+
+  .buttonresume{
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+  }
+
+  
+
+
+  .weblangauge{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .project{
+    margin: 0;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 40px;
+  }
+
+  .numberofproject{
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contact{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+
+
+
+
+  .darkmodeicon{
+    padding-right: 20px;
+}
+
+.fa-sun, .fa-moon{
+      font-size: 40px;
+
+  }
+  
+  .darkmode{
+    display: flex;
+    justify-content: end;
+  }
+
+}
